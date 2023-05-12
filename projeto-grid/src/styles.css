@@ -1,0 +1,76 @@
+body {
+    font-family: Heebo;
+    background-color: rgb(8, 8, 8);
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.div-total {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "danca irra queisso"
+    "pare cavalo cavalo"
+    "uepa cavalo cavalo"
+    ;
+}
+
+button {
+    font-size: 40px;
+    color: rgb(175, 175, 175);
+    background-color: rgb(20, 16, 29);
+    border: 4px solid rgb(122, 12, 12);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform .3s, box-shadow .2s;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+button:active {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#som1 {
+    grid-area: danca;
+    height: 250px;
+}
+
+#som2 {
+    grid-area: irra;
+    height: 250px;
+}
+
+#som3 {
+    grid-area: queisso;
+    height: 250px;
+}
+
+#som4 {
+    grid-area: pare;
+    height: 250px;
+}
+
+#som5 {
+    grid-area: uepa;
+    height: 250px;
+}
+
+#som6 {
+    grid-area: cavalo;
+}
